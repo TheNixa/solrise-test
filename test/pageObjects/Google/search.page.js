@@ -9,21 +9,25 @@ class SearchPage extends Page {
     }
 
     get searchButton() {
-        return $('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]');
+        return $('.FPdoLc center .gNO89b');
     }
 
     get iAgreeButton() {
         return $('//*[@id="L2AGLb"]/div');
     }
 
+    get background() {
+        return $('.o3j99.ikrT4e')
+    }
+
 
     // Search for the keyword and click on the button
-    async searchForCheese(keyword) {
+    async enterInputValue(keyword) {
         browser.switchToFrame("CXQnmb");
-        await (await this.iAgreeButton).click();
+        // await (await this.iAgreeButton).click();
         await (await this.inputSearchField).setValue(keyword);
+        await (await this.background).click();
         await (await this.searchButton).click();
-
     }
 
     open() {

@@ -4,22 +4,32 @@ const Page = require('./page');
 class WidgetsPage extends Page {
     // Define selectors for the home page
 
-    get widgetsPageTitle(){
+    get widgetsPageTitle() {
         return $('.main-header=Widgets');
     }
 
-    get toolTipsButton(){
+    get toolTipsButton() {
         return $('.text=Tool Tips');
     }
 
+    get toolTip() {
+        return $("#buttonToolTip")
+    }
 
 
+    get toolTipButton() {
+        return $("#toolTipButton")
+    }
 
-    async clickOnTooltipsButton(){
+    async clickOnTooltipsButton() {
         await (await this.toolTipsButton).scrollIntoView();
         await (await this.toolTipsButton).click();
     }
 
+    async hoverOverHoverButton() {
+        await (await this.toolTipButton).scrollIntoView();
+        await (await this.toolTipButton).click();
+    }
 
 
 }
