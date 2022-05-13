@@ -29,9 +29,5 @@ class SearchPage extends Page {
         await (await this.background).click();
         await (await this.searchButton).click();
     }
-
-    open() {
-        return super.open('');
-    }
 }
 module.exports = new SearchPage();

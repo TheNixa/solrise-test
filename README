@@ -1,3 +1,20 @@
-Instructions to run tests
+Instructions to run tests:
 -run npm install
--type: npx wdio wdio.conf.js --spec SPECFILENAME
+-type: npm test
+
+Instruction to run single test:
+-Install dependencies if you haven't
+-type: npm run test-single -- NAMEOFSUITE
+list of suites: (defined in wdio.conf.js)
+  -google
+  -demoqa
+  -sauce
+
+Reporting:
+- npm run allure-generate
+- npm run allure-read
+
+
+Notes:
+For purpose of real test data I would use .env files,
+but since .env files are ussually not commited with github I chose to hardcode the values
