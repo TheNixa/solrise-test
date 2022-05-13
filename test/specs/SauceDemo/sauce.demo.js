@@ -9,7 +9,7 @@ const CheckoutCompletePage = require("../../pageObjects/SauceDemo/checkout.compl
 
 
 describe('SauceDemo tests', () => {
-    it('DescribeTest', async () => {
+    it('should successfully go trough checkout process', async () => {
         LoginPage.open("https://www.saucedemo.com/");
         await LoginPage.populateUserName('standard_user');
         await LoginPage.populatePassword('secret_sauce');

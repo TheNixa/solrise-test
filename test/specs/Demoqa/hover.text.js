@@ -2,7 +2,7 @@ const WidgetsPage = require('../../pageObjects/Demoqa/widgets.page');
 const HomePage = require('../../pageObjects/Demoqa/home.page');
 
 describe('DemoQA tests', () => {
-    it('Should validate tooltip text', async () => {
+    it('should validate tooltip text', async () => {
         // Open Home page
         HomePage.open("https://demoqa.com/");
 
