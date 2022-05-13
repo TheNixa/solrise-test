@@ -1,4 +1,4 @@
-const Page = require('./page');
+const Page = require('../Page');
 
 class ShoppingCartPage extends Page {
     // Find selectors using getter metods

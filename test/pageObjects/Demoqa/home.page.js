@@ -1,5 +1,4 @@
-const Page = require('../Demoqa/page');
-
+const Page = require('../Page');
 
 class HomePage extends Page {
     // Define selectors for the home page
@@ -7,8 +6,6 @@ class HomePage extends Page {
     get widgetsButton() {
         return $('.card-body=Widgets');
     }
-
-    // Click on the widget card
 
     async clickOnWidgetsCard(keyword) {
         await (await this.widgetsButton).scrollIntoView();

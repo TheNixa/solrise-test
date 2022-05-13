@@ -1,4 +1,4 @@
-const Page = require('../Google/page');
+const Page = require('../Page');
 
 class SearchPage extends Page {
 

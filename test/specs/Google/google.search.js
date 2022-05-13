@@ -3,7 +3,7 @@ const ResultsPage = require('../../pageObjects/Google/results.page');
 
 describe('My Google search', () => {
     it('should validate number of search results', async () => {
-        SearchPage.open();
+        SearchPage.open("https://google.com");
 
         //Search for cheese
         await SearchPage.enterInputValue('Cheese');

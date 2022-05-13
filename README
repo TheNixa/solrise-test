@@ -1,0 +1,3 @@
+Instructions to run tests
+-run npm install
+-type: npx wdio wdio.conf.js --spec SPECFILENAME

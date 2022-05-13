@@ -1,5 +1,4 @@
-const { isThisTypeNode } = require('typescript');
-const Page = require('./page');
+const Page = require('../Page');
 
 class WidgetsPage extends Page {
     // Define selectors for the home page
