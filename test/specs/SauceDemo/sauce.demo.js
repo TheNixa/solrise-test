@@ -19,6 +19,7 @@ describe('SauceDemo tests', () => {
         await expect(ShoppingCartPage.cartNumberOfProducts).toHaveTextContaining("2", {
             message: "There is more items in the cart than expected"
         })
+        //I would use a different aproach for selectors here if items weren't connected to id's
         await ShoppingCartPage.removeCheaperItem();
         await ShoppingCartPage.checkout();
         await CheckoutYourInfoPage.populateFirstName("Test");
