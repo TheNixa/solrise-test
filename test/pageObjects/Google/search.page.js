@@ -24,6 +24,7 @@ class SearchPage extends Page {
     // Search for the keyword and click on the button
     async enterInputValue(keyword) {
         browser.switchToFrame("CXQnmb");
+        // Remove comment from the next row if you have issue with popup on Google home page
         // await (await this.iAgreeButton).click();
         await (await this.inputSearchField).setValue(keyword);
         await (await this.background).click();
