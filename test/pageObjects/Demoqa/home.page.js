@@ -12,7 +12,6 @@ class HomePage extends Page {
         await (await this.widgetsButton).click();
     }
 
-
     open() {
         return super.open('');
     }

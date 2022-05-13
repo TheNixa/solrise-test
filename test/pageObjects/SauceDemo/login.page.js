@@ -1,6 +1,5 @@
 const Page = require('../Page');
 
-
 class LoginPage extends Page {
     get userName() {
         return $('#user-name')
@@ -24,8 +23,6 @@ class LoginPage extends Page {
     async submit() {
         await (await this.loginButton).click();
     }
-
-
 }
 
 module.exports = new LoginPage();

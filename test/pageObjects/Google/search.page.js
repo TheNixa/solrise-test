@@ -20,7 +20,6 @@ class SearchPage extends Page {
         return $('.o3j99.ikrT4e')
     }
 
-
     // Search for the keyword and click on the button
     async enterInputValue(keyword) {
         browser.switchToFrame("CXQnmb");

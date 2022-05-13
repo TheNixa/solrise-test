@@ -5,9 +5,6 @@ const CheckoutYourInfoPage = require("../../pageObjects/SauceDemo/checkout.your.
 const CheckoutOverviewPage = require("../../pageObjects/SauceDemo/checkout.overview.page");
 const CheckoutCompletePage = require("../../pageObjects/SauceDemo/checkout.complete.page");
 
-
-
-
 describe('SauceDemo tests', () => {
     it('should successfully go trough checkout process', async () => {
         LoginPage.open("https://www.saucedemo.com/");

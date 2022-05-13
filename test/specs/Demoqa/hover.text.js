@@ -5,7 +5,6 @@ describe('DemoQA tests', () => {
     it('should validate tooltip text', async () => {
         // Open Home page
         HomePage.open("https://demoqa.com/");
-
         // Click on widget card
         await HomePage.clickOnWidgetsCard();
         await expect(WidgetsPage.widgetsPageTitle).toBeExisting();

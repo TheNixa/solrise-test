@@ -22,7 +22,5 @@ class CheckoutOverviewPage extends Page {
         await (await this.finishButton).scrollIntoView();
         await (await this.finishButton).click();
     }
-
-
 }
 module.exports = new CheckoutOverviewPage();

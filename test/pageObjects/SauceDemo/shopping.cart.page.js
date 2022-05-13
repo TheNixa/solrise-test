@@ -24,7 +24,5 @@ class ShoppingCartPage extends Page {
         await (await this.checkoutButton).scrollIntoView();
         await (await this.checkoutButton).click();
     }
-
-
 }
 module.exports = new ShoppingCartPage();

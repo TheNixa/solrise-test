@@ -15,7 +15,6 @@ class WidgetsPage extends Page {
         return $("#buttonToolTip")
     }
 
-
     get toolTipButton() {
         return $("#toolTipButton")
     }
@@ -29,7 +28,5 @@ class WidgetsPage extends Page {
         await (await this.toolTipButton).scrollIntoView();
         await (await this.toolTipButton).click();
     }
-
-
 }
 module.exports = new WidgetsPage();
